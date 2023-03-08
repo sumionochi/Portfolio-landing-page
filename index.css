@@ -810,6 +810,14 @@ summary::marker{
 
 @media only screen and (max-device-width: 1000px) {
 
+    .about .aboutpage{
+        display: flex;
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+    }
+    
+
     .aboutpage form{
         display: flex;
         justify-content: center;
@@ -868,6 +876,16 @@ summary::marker{
         justify-content: center;
         align-items: left;
         padding: 1.5rem 2rem;
+    }
+
+    .sechalf .myself{
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
     }
 
     .sechalf .link div{
