@@ -6,6 +6,10 @@
 
 /* all */
 
+html, body{
+    overflow-x: hidden;
+}
+
 html{
     overflow-x: hidden;
     overflow-y: scroll;
@@ -19,6 +23,7 @@ html{
     flex-direction: column;
     flex-shrink: 0;
     width: auto;
+    position: relative;
 }
 
 * {
@@ -124,6 +129,10 @@ header{
 header .content{
     width: 100vw;
     font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header .content h1{
@@ -204,6 +213,10 @@ header p:active, .contact div button:active, .resume p:active{
     align-items: center;
     flex-direction: column;
     max-width:100%;
+}
+
+.titlemain,.titlemain-active,.aboutmain,.aboutmain-active,.titlemain-active2,.titlemain2{
+    font-size: 2rem;
 }
 
 .titlemain{
@@ -342,16 +355,20 @@ main .projcontained .col1 .one .imgset1{
     background-size: fill;
     border-bottom-style: solid;
     border-width: 1px;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 main .projcontained .col1 .one .imgset2{
     width: 100%;
+    cursor: pointer;
     height: 250%;
     background-image: url(./resource2/eletter.png);
     background-position: center;
     background-size: cover;
     border-bottom-style: solid;
     border-width: 1px;
+    background-repeat: no-repeat;
 }
 
 main .projcontained .col1 .one .imgset3{
@@ -362,6 +379,7 @@ main .projcontained .col1 .one .imgset3{
     background-size: cover;
     border-bottom-style: solid;
     border-width: 1px;
+    cursor: pointer;
 }
 
 main .projcontained .col1 .one .imgset4{
@@ -372,14 +390,20 @@ main .projcontained .col1 .one .imgset4{
     background-size: cover;
     border-bottom-style: solid;
     border-width: 1px;
+    cursor: pointer;
 }
 
 main .projcontained .col1 .one .containedtext{
-    height: 100%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 0.25rem;
+    padding: 0.15rem;
+}
+
+.containedtext:hover {
+    outline:1px solid #E4DDCF;
+    outline-offset: -3px;
 }
 
 main .projcontained .col1 .one h2{
@@ -459,11 +483,11 @@ main .projcontained .col1 .one details{
 }
 
 .one details summary{
-    list-style-type:'▶️ ';
+    list-style-type:'@ ';
 }
 
 .one details[open] summary{
-    list-style-type: '▼ ';
+    list-style-type: '@ ';
 }
 
 summary::marker{
@@ -481,7 +505,8 @@ summary::marker{
     text-decoration: none;
     text-transform: capitalize;
     opacity: 0.7;
-    margin-left: 1.4rem;
+    margin-left: 1.3rem;
+    
 }
 
 .github{
@@ -508,6 +533,7 @@ summary::marker{
     width: 9.4rem;
     height: 9.4rem;
     margin-right: 3.3rem;
+    margin-top: 5px;
     border-style: solid;
     border-width: 1px;
     white-space: nowrap;
@@ -519,6 +545,7 @@ summary::marker{
     rotate: 90deg;
     position: absolute;
     right: -35px;
+    top: 66px;
     width: fit-content;
     height: fit-content;
     font-size: rem;
@@ -541,7 +568,7 @@ summary::marker{
 
 .github .onegit{
     z-index: 1;
-    margin-right: 1rem;
+    padding-right: 1rem;
 }
 
 .github .onegit h2{
@@ -554,6 +581,10 @@ summary::marker{
 .github .onegit img{
     position: absolute;
     bottom: 1rem;
+}
+
+.github:hover{
+    outline: 1px solid #E4DDCF;
 }
 
 /* about */
@@ -689,6 +720,11 @@ summary::marker{
     border-width: 1px;
 }
 
+.sechalf .excepttext{
+    display: flex;
+    flex-direction: column;
+}
+
 .sechalf .link{
     font-size: 1.5rem;
     border-bottom-style: solid;
@@ -727,8 +763,15 @@ summary::marker{
 .sechalf .myself{
     padding: 2rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    overflow: scroll;
     flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+}
+
+.sechalf .myself::-webkit-scrollbar-track{
+    background-color: transparent;
 }
 
 .sechalf .myself img{
@@ -749,6 +792,11 @@ summary::marker{
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 1rem;
+}
+
+.sechalf .myself .alltexthere{
+    display: flex;
+    flex-direction: column;
 }
 
 .sechalf .myself p{
@@ -791,11 +839,15 @@ summary::marker{
         width: 100%;
         height: 100%;
         padding: 2rem;
-        padding-bottom: 0px;
+        padding-bottom: 0rem;
+    }
+
+    .contact .padit{
+        margin-bottom: 1rem;
     }
 
     .sechalf{
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         border-left-style: none;
         border-top-style: solid;
         display: flex;
@@ -987,6 +1039,13 @@ summary::marker{
     padding: 1rem;
     margin: 10px;
     background-color: #4b4463;
+    transition: all 0.3s ease;
+}
+
+.skills .all .allskill div div div img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #E4DDCF;
+    cursor: pointer;
 }
 
 .skills .all .allskill .oneof .frontend div img{
@@ -1086,6 +1145,8 @@ footer .part1{
     flex-direction: column;
     width: 50%;
     height: 100%;
+    justify-content: center;
+    align-items: center;
     margin: 4rem 0rem;
 }
 
@@ -1120,7 +1181,7 @@ footer .part2 img{
     }
 
     50%{
-        transform: translateY(10px);
+        transform: translateY(20px);
     }
 }
 
@@ -1157,6 +1218,10 @@ footer .part1 .twooflast{
 footer .twooflast{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    height: 100px;
     white-space: nowrap;
 }
 
@@ -1167,8 +1232,15 @@ footer .twooflast img{
     border-width: 1px;
     flex-wrap: wrap;
     padding: 0.5rem;
-    margin: 10px;
+    margin: 10px 15px;
     background-color: #4b4463;
+    transition: all 0.3s ease;
+}
+
+footer .part1 .twooflast img:hover{
+    transform: scale(1.3);
+    box-shadow: 0px 0px 10px #E4DDCF;
+    cursor: pointer;
 }
 
 @media only screen and (max-device-width:1000px) {
@@ -1287,4 +1359,10 @@ footer .twooflast img{
     flex-wrap: nowrap;
     width: auto;
     height: 100vh;
+}
+
+.myself span{
+    background: #E4DDCF;
+    color: #1E1E1E;
+    padding: 0px 4px;
 }

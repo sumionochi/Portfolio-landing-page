@@ -33,14 +33,14 @@ ScrollTrigger.create({
     end: "bottom bottom",
 });
 
-const tl=gsap.timeline({
+/*const tl=gsap.timeline({
     scrub:true,
     pin: true,
     ease: "none",
     scrollTrigger:{
         trigger:".lefttext",
         start: "top 90%",
-        end: "top 10%",
+        end: "top 5%",
         toggleActions: "restart reverse restart reverse",
     }
 });
@@ -50,18 +50,18 @@ const tl1=gsap.timeline({
     pin:true,
     ease: "none",
     scrollTrigger:{
-        trigger:".righttext",
+        trigger:".lefttext",
         start: "top 90%",
-        end: "top 10%",
+        end: "top 5%",
         toggleActions: "restart reverse restart reverse",
     }
 });
 
-tl.from(".lefttext", {x:-100,opacity: 0,duration: 2})
+tl.from(".lefttext", {x:-30,opacity: 0,duration: 2})
 tl.to(".lefttext", {x:0,opacity:1, duration:2})
 
-tl1.from(".righttext", {x:100,opacity: 0,duration:2})
-tl1.to(".righttext", {x:0,opacity:1,duration:2})
+tl1.from(".righttext", {x:30,opacity: 0,duration:2})
+tl1.to(".righttext", {x:0,opacity:1,duration:2}) */
 
 ScrollTrigger.create({
     trigger: ".titlemain",
