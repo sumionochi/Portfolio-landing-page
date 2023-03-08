@@ -21,12 +21,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
     animation: gsap.from(".logo",{
-        y:"130vh",
+        y:"130svh",
         scale: 6,
         yPercent: -50,
     }),
     scrub: 1,
-    pin: true,
     trigger: "containlogo",
     start: "top center",
     endTrigger: ".header",
