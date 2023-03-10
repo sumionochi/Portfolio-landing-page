@@ -96,7 +96,7 @@ ScrollTrigger.create({
     animation:move,
     trigger:".allforone",
     start:"center center",
-    end:"+=4000",
+    end:"+=2000",
     scrub:2,
     pin:true,
     pinSpacing: true,
