@@ -930,6 +930,8 @@ summary::marker{
     height: auto;
     row-gap: 4rem;
     max-width:100%;
+    border-bottom-style: solid;
+    border-width: 1px;
 }
 
 .skills .all{
@@ -1436,8 +1438,7 @@ footer .part1 .twooflast img:hover{
     flex-wrap: nowrap;
     width: auto;
     height: 100vh;
-    border-top-style: solid;
-    border-width: 1px;
+    
 }
 
 .allforone div{
@@ -1448,11 +1449,9 @@ footer .part1 .twooflast img:hover{
     height: 100vh;
     flex-direction: row;
     flex-wrap: nowrap;
-    position: relative;
 }
 
 .sections1{
-    position: relative;
     width: 70vw;
     height: 70vh;
     border-style: solid;
@@ -1488,7 +1487,6 @@ footer .part1 .twooflast img:hover{
 }
 
 .sections2{
-    position: relative;
     width: 70vw;
     height: 70vh;
     border-style: solid;
@@ -1524,7 +1522,6 @@ footer .part1 .twooflast img:hover{
 }
 
 .sections3{
-    position: relative;
     width: 70vw;
     height: 70vh;
     border-style: solid;
@@ -1565,7 +1562,6 @@ footer .part1 .twooflast img:hover{
 }
 
 .sections4{
-    position: relative;
     width: 70vw;
     height: 70vh;
     border-style: solid;
@@ -1580,6 +1576,8 @@ footer .part1 .twooflast img:hover{
 
     filter: grayscale(1);
     -webkit-filter: grayscale(1);
+
+    position: relative;
 }
 
 .sections4:hover{
@@ -1607,4 +1605,12 @@ footer .part1 .twooflast img:hover{
     white-space: nowrap;
     text-align: center;
     font-style: italic;
+}
+
+.suggest{
+    position: absolute;
+    bottom: -6%;
+    text-transform: capitalize;
+    white-space: nowrap;
+    background: transparent;
 }

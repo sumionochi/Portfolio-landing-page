@@ -97,10 +97,8 @@ ScrollTrigger.create({
     trigger:".allforone",
     start:"center center",
     end:"+=4000",
-    scrub:true,
+    scrub:2,
     pin:true,
     pinSpacing: true,
     pinnedContainer: ".allforone",
-    marker: "true",
 })
-
