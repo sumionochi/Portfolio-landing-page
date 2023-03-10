@@ -99,6 +99,7 @@ ScrollTrigger.create({
     end:"+=2000",
     scrub:2,
     pin:true,
+    stagger: 0,
     pinSpacing: true,
     pinnedContainer: ".allforone",
 })
