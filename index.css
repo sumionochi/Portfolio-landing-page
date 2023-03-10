@@ -31,7 +31,7 @@ html{
     margin: 0;
     box-sizing:border-box;
     font-family: 'Inter', sans-serif ;
-    background-color: #1E1E1E;
+    background-color: #29282c;
     color: #F5F5F4;
     max-width: 100%;
 }
@@ -351,8 +351,8 @@ main .projcontained .col1 .one .imgset1{
     width: 100%;
     height: 250%;
     background-image: url(./resource2/linkit.png);
-    background-position: top;
-    background-size: fill;
+    background-position: center;
+    background-size: cover;
     border-bottom-style: solid;
     border-width: 1px;
     background-repeat: no-repeat;
@@ -1188,17 +1188,17 @@ footer .part2{
 footer .part2 img{
     min-width: 30%;
     height: 40rem;
-    box-shadow: 20px 20px 0px #c4c4c4;
-    border-bottom-style: solid;
-    border-color: #000000;
+    box-shadow: 20px 20px 0px #d8ceba;
+    border-style: solid;
     border-width: 2px;
+    border-color: #000000;
     animation: hoverit 2s infinite ease;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .part2 img:hover{
-    box-shadow: 20px 20px 0px #1E1E1E;
+    box-shadow: 20px 20px 0px #29282c;
 }
 
 @keyframes hoverit {
@@ -1318,7 +1318,7 @@ footer .part1 .twooflast img:hover{
         width: 100vw;
         text-align: center;
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 1.4rem;
         letter-spacing: 2px;
         font-weight: 300;
         padding: 1rem;
@@ -1332,10 +1332,11 @@ footer .part1 .twooflast img:hover{
 
 .part3{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border-top-style: solid;
     border-width: 1px;
+    text-align: center;
 }
 
 .part3 h1{
@@ -1379,16 +1380,231 @@ footer .part1 .twooflast img:hover{
     flex-wrap: nowrap;
 }
 
+.myself span{
+    background: #E4DDCF;
+    color: #1E1E1E;
+    padding: 0px 4px;
+}
+
+.thanksbody{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    position: relative;
+}
+
+.containthanks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    row-gap: 1rem;
+    
+}
+
+.containthanks h1{
+    white-space: nowrap;
+}
+
+.containthanks p{
+    text-align: center;
+}
+
+@media only screen and (max-device-width:500px) {
+    .containthanks h1{
+        white-space: nowrap;
+        font-size: 1.5rem;
+    }
+}
+
+.linkthanks{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
 .allforone{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     width: auto;
     height: 100vh;
+    border-top-style: solid;
+    border-width: 1px;
 }
 
-.myself span{
-    background: #E4DDCF;
-    color: #1E1E1E;
-    padding: 0px 4px;
+.allforone div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.sections1{
+    position: relative;
+    width: 70vw;
+    height: 70vh;
+    border-style: solid;
+    border-width: 1px;
+    background-image: url(./resource3/4.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.sections1:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+.sections1 p{
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    border-style: solid;
+    padding: 1vw 2vw; 
+    z-index: 1;
+    border-width: 1px;
+    background: #29282c8e;
+}
+
+.sections2{
+    position: relative;
+    width: 70vw;
+    height: 70vh;
+    border-style: solid;
+    border-width: 1px;
+    background-image: url(./resource3/3.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.sections2:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+.sections2 p{
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    border-style: solid;
+    padding: 1vw 2vw; 
+    z-index: 1;
+    border-width: 1px;
+    background: #29282c8e;
+}
+
+.sections3{
+    position: relative;
+    width: 70vw;
+    height: 70vh;
+    border-style: solid;
+    border-width: 1px;
+    background-image: url(./resource3/2.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.sections3:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+.sections3 p{
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    border-style: solid;
+    padding: 1vw 2vw; 
+    z-index: 1;
+    border-width: 1px;
+    background: #29282c8e;
+    
+}
+
+.sections3 span{
+    padding: 1rem;
+}
+
+.sections4{
+    position: relative;
+    width: 70vw;
+    height: 70vh;
+    border-style: solid;
+    border-width: 1px;
+    background-image: url(./resource3/5.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.sections4:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+.sections4 p{
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    border-style: solid;
+    padding: 1vw 2vw; 
+    z-index: 1;
+    border-width: 1px;
+    background: #29282c8e;
+}
+
+.sections4 span{
+    margin: 1rem;
+    font-size: 1.1rem;
+    background: transparent;
+    white-space: nowrap;
+    text-align: center;
+    font-style: italic;
 }

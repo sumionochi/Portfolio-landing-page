@@ -12,8 +12,8 @@
 <body>
 
     <nav>
-        <h1 class="firstname" data-aos="fade"><a href="#about">Aaditya</a></h1>
-        <h1 class="surname" data-aos="fade"><a href="#about">Srivastava</a></h1>
+        <h1 class="firstname" data-aos="fade"><a href="#">Aaditya</a></h1>
+        <h1 class="surname" data-aos="fade"><a href="#">Srivastava</a></h1>
         <a href="https://sumionochi.github.io/Linkit/" data-aos="fade"><img src="./resource/arrow.png" alt="Linkit."></a>
         <ul data-aos="fade">
             <li><a href="#projects">Projects</a></li>
@@ -43,8 +43,8 @@
     
         <main id="projects">
             
-            <h1 class="titlemain">Projects</h1>
-            
+            <h1 class="titlemain">Projects</h1> 
+
             <div class="oneforall">
                 <div class="projcontained">
                     <div class="col1">
@@ -109,6 +109,8 @@
                 
                 </div>
             </div>
+
+            
         </main>
     
         <section class="about" id="about">
@@ -129,6 +131,12 @@
     
                         <input class="padit" type="email" id="details" name="email" placeholder="Email" autocomplete="on" required data-aos="fade-up" style="background: transparent;">
                         
+                        <input type="text" name="_honey" style="display: none;">
+
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <input type="hidden" name="_next" value="https://sumionochi.github.io/Portfolio-landing-page/thanks.html">
+
                         <div>
                             <button type="submit" data-aos="fade-up">Send</button>
                         </div>
@@ -174,7 +182,7 @@
         </section>
     
         <section class="skills" id="skills">
-            <h1 class="titlemain2">Skills | proficient at</h1>
+            <h1 class="titlemain2">Skills</h1>
             <div class="all">
     
                 <section class="resume" id="resume">
@@ -259,6 +267,29 @@
     
             </div>
         </section>
+        
+        <div class="allforone">
+            <div class="div1">
+                <section class="sections1">
+                    <p>Mentoring as a team member of Google Developer Student club.</p>    
+                </section>
+            </div>
+            <div class="div2">
+                <section class="sections2">
+                    <p>Showcased what's possible to create.</p>    
+                </section>
+            </div>
+            <div class="div3">
+                <section class="sections3">
+                    <p>Guided students to recreate.</p>    
+                </section>
+            </div>
+            <div class="div4">
+                <section class="sections4">
+                    <p>Response. <br><span>"what's next?"</span></p>    
+                </section>
+            </div>
+        </div>
     
        <footer>
         <div class="part1" id="connect">
@@ -272,7 +303,7 @@
             </div>
         </div>
         <div class="part2">
-            <img onclick='location.href="https://sumionochi.github.io/Linkit/";' data-aos="fade-up" src="./resource/linkit.png" alt="linkit">
+            <img onclick='location.href="https://sumionochi.github.io/Linkit/";' data-aos="fade-up" src="./resource/linkit.jpeg" alt="linkit">
         </div>
         
         
@@ -290,7 +321,8 @@
     <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({ 
+      });
     </script>    
     <script src="./index.js"></script>
 </body>

@@ -32,7 +32,7 @@ ScrollTrigger.create({
     end: "bottom bottom",
 });
 
-/*const tl=gsap.timeline({
+/* const tl=gsap.timeline({
     scrub:true,
     pin: true,
     ease: "none",
@@ -65,8 +65,8 @@ tl1.to(".righttext", {x:0,opacity:1,duration:2}) */
 ScrollTrigger.create({
     trigger: ".titlemain",
     delay:1,
-    start: "top 80%",
-    end: "top 20%",
+    start: "top bottom",
+    end: "top top",
     toggleClass: "titlemain-active",
 })
 
@@ -75,14 +75,14 @@ ScrollTrigger.create({
     delay:1,
     start: "top bottom",
     end: "top top",
-    toggleClass: "aboutmain-active",
+    toggleClass: "aboutmain-active", 
 })
 
 ScrollTrigger.create({
     trigger: ".titlemain2",
     delay:1,
-    start: "top 80%",
-    end: "top 20%",
+    start: "top bottom",
+    end: "top top",
     toggleClass: "titlemain-active2",
 })
 
@@ -98,6 +98,9 @@ ScrollTrigger.create({
     start:"center center",
     end:"+=4000",
     scrub:true,
-    pin:true
+    pin:true,
+    pinSpacing: true,
+    pinnedContainer: ".allforone",
+    marker: "true",
 })
 
