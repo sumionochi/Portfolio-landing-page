@@ -98,6 +98,7 @@ ScrollTrigger.create({
     start:"center center",
     end:"+=2000",
     scrub:1,
+    y:"1lvh",
     pin:true,
     stagger: 0,
     pinSpacing: true,
