@@ -1437,7 +1437,7 @@ footer .part1 .twooflast img:hover{
     flex-direction: row;
     flex-wrap: nowrap;
     width: auto;
-    height: 100svh;
+    height: 100lvh;
     
 }
 
@@ -1446,14 +1446,14 @@ footer .part1 .twooflast img:hover{
     justify-content: center;
     align-items: center;
     min-width: 100vw;
-    height: 100svh;
+    min-height: 100lvh;
     flex-direction: row;
     flex-wrap: nowrap;
 }
 
 .sections1{
     width: 70vw;
-    height: 70svh;
+    height: 70lvh;
     border-style: solid;
     border-width: 1px;
     background-image: url(./resource3/4.jpeg);
@@ -1488,7 +1488,7 @@ footer .part1 .twooflast img:hover{
 
 .sections2{
     width: 70vw;
-    height: 70svh;
+    height: 70lvh;
     border-style: solid;
     border-width: 1px;
     background-image: url(./resource3/3.jpeg);
@@ -1523,7 +1523,7 @@ footer .part1 .twooflast img:hover{
 
 .sections3{
     width: 70vw;
-    height: 70svh;
+    height: 70lvh;
     border-style: solid;
     border-width: 1px;
     background-image: url(./resource3/2.jpeg);
@@ -1563,7 +1563,7 @@ footer .part1 .twooflast img:hover{
 
 .sections4{
     width: 70vw;
-    height: 70svh;
+    height: 70lvh;
     border-style: solid;
     border-width: 1px;
     background-image: url(./resource3/5.jpeg);
