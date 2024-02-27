@@ -350,7 +350,7 @@ main .projcontained .col1 .one{
 main .projcontained .col1 .one .imgset1{
     width: 100%;
     height: 250%;
-    background-image: url(./resource2/linkit.png);
+    background-image: url(./resource2/assessme.png);
     background-position: center;
     background-size: cover;
     border-bottom-style: solid;
@@ -363,7 +363,7 @@ main .projcontained .col1 .one .imgset2{
     width: 100%;
     cursor: pointer;
     height: 250%;
-    background-image: url(./resource2/eletter.png);
+    background-image: url(./resource2/shivi.png);
     background-position: center;
     background-size: cover;
     border-bottom-style: solid;
@@ -374,7 +374,7 @@ main .projcontained .col1 .one .imgset2{
 main .projcontained .col1 .one .imgset3{
     width: 100%;
     height: 250%;
-    background-image: url(./resource2/black-jack.png);
+    background-image: url(./resource2/notes.png);
     background-position: center;
     background-size: cover;
     border-bottom-style: solid;
@@ -1491,7 +1491,7 @@ footer .part1 .twooflast img:hover{
     height: 70lvh;
     border-style: solid;
     border-width: 1px;
-    background-image: url(./resource3/3.jpeg);
+    background-image: url(./resource2/gfg.jpeg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -1526,7 +1526,7 @@ footer .part1 .twooflast img:hover{
     height: 70lvh;
     border-style: solid;
     border-width: 1px;
-    background-image: url(./resource3/2.jpeg);
+    background-image: url(./resource2/sih.jpeg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -1566,7 +1566,7 @@ footer .part1 .twooflast img:hover{
     height: 70lvh;
     border-style: solid;
     border-width: 1px;
-    background-image: url(./resource3/5.jpeg);
+    background-image: url(./resource2/dtv.jpeg);
     background-position: center;
     background-size: cover;
     display: flex;
