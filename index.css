@@ -374,7 +374,7 @@ main .projcontained .col1 .one .imgset2{
 main .projcontained .col1 .one .imgset3{
     width: 100%;
     height: 250%;
-    background-image: url(./resource2/notes.png);
+    background-image: url(./resource3/R.png);
     background-position: center;
     background-size: cover;
     border-bottom-style: solid;
@@ -385,7 +385,7 @@ main .projcontained .col1 .one .imgset3{
 main .projcontained .col1 .one .imgset4{
     width: 100%;
     height: 250%;
-    background-image: url(./resource2/naruto-fandom-page.png);
+    background-image: url(./resource3/c.png);
     background-position: center;
     background-size: cover;
     border-bottom-style: solid;
